@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/abstract-mosaic-pattern-colorful-geometric-background_1035-23078.jpg?t=st=1734459466~exp=1734463066~hmac=275578586fa635a4885cf623febee6a9fc164c777cb90012c482822c13443afb&w=740");
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Tiny5", sans-serif;
+    margin-bottom: 0%;
+}
+
+p{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+}
+
+#start_btn{
+    font-family: "Tiny5", sans-serif;
+    font-size: 1.3em;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(184, 246, 101);
+}
+
+#start_btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(69, 159, 4);
+    color: white;
+    box-shadow: 2px 2px 4px rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+.draw{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    font-size: 1.2em;
+    padding: 10px 15px;
+    width: 80px;
+    height: 50px;
+}
+input{
+    width: 80px;
+    height: 50px;
+    padding: 0;
+}
+
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px black;
+}
+
+.del_btn{
+    background-color: rgb(238, 144, 144);
+}
+.fill_btn{
+    background-color: rgb(109, 170, 236);
+}
+.save_btn{
+    background-color: rgb(122, 250, 156);
+}
+.res_btn{
+    background-color: rgb(224, 243, 151);
+}
+.paint_btn{
+    background-color: rgb(223, 172, 245);
+}
+
+
+
+
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(50, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 20px 0;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+
+.cell{
+    width: 20px;
+    height:20px;
+    background-color: beige;
+    border: 1px solid black;
+}
